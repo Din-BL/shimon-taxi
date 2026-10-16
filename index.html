@@ -174,21 +174,6 @@ section[id]{scroll-margin-top:84px}
 .service h3{font-family:var(--font-ui);font-weight:700;font-size:1.15rem;line-height:1.3;margin-top:4px}
 .service p{color:var(--muted);font-size:1rem;line-height:1.55}
 
-/* destinations: green road signs */
-.areas{background:var(--sand)}
-.regions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
-.region{display:grid;align-content:start;gap:14px;min-width:0}
-.region h3{font-family:var(--font-display);font-weight:700;font-size:2.4rem;line-height:1}
-.sign{background:var(--sign);color:var(--on-sign);border-radius:12px;padding:6px;box-shadow:var(--shadow)}
-.sign ul{border:2px solid var(--on-sign);border-radius:8px;padding:12px 16px;display:grid;gap:10px}
-.sign li{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:12px}
-.sign .he{display:block;font-family:var(--font-ui);font-weight:700;font-size:1.4rem;line-height:1.15}
-.sign .en{display:block;font-family:var(--font-ui);font-weight:500;font-size:.82rem;line-height:1.2;opacity:.88}
-.sign .km{font-family:var(--font-ui);font-weight:700;font-size:1.6rem;font-variant-numeric:tabular-nums;line-height:1}
-.more{color:var(--muted);font-size:.98rem;line-height:1.55}
-.more b{color:var(--ink);font-weight:700}
-.note{margin-top:28px;font-size:.88rem;color:var(--muted)}
-
 /* car */
 .car .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:56px;align-items:center}
 .car-copy{min-width:0;display:grid;gap:10px}
@@ -263,7 +248,6 @@ section[id]{scroll-margin-top:84px}
   .hero .wrap,.car .wrap,.band .wrap{grid-template-columns:minmax(0,1fr);gap:36px}
   .portrait{order:-1;max-width:520px}
   .portrait img{aspect-ratio:5/4;object-position:50% 12%}
-  .regions{grid-template-columns:minmax(0,1fr);max-width:560px}
 }
 @media (max-width:620px){
   body{padding-bottom:calc(78px + env(safe-area-inset-bottom,0px))}
@@ -311,7 +295,6 @@ section[id]{scroll-margin-top:84px}
     </a>
     <nav class="nav" aria-label="ניווט ראשי">
       <a href="#services">נסיעות</a>
-      <a href="#areas">אזורים</a>
       <a href="#car">הרכב</a>
       <a href="#book">הזמנה</a>
     </nav>
@@ -401,55 +384,6 @@ section[id]{scroll-margin-top:84px}
           <p>קובעים יום ושעה מראש, ושמעון מגיע לאסוף אתכם.</p>
         </li>
       </ul>
-    </div>
-  </section>
-
-  <section class="section areas" id="areas">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">אזורים</p>
-        <h2 class="h2">יוצאים מאשקלון</h2>
-        <p class="lede">שמעון נוסע לכל מקום בדרום, במרכז ובאזור ירושלים. היעד שלכם לא מופיע כאן? שאלו אותו.</p>
-      </div>
-
-      <div class="regions">
-        <article class="region">
-          <h3>דרום</h3>
-          <div class="sign">
-            <ul>
-              <li><span><span class="he">אשדוד</span><span class="en" lang="en">Ashdod</span></span><span class="km">25</span></li>
-              <li><span><span class="he">קריית גת</span><span class="en" lang="en">Qiryat Gat</span></span><span class="km">30</span></li>
-              <li><span><span class="he">באר שבע</span><span class="en" lang="en">Be'er Sheva</span></span><span class="km">70</span></li>
-            </ul>
-          </div>
-          <p class="more"><b>ועוד:</b> שדרות, נתיבות, אופקים, קריית מלאכי, גן יבנה</p>
-        </article>
-
-        <article class="region">
-          <h3>מרכז</h3>
-          <div class="sign">
-            <ul>
-              <li><span><span class="he">ראשון לציון</span><span class="en" lang="en">Rishon LeZiyyon</span></span><span class="km">45</span></li>
-              <li><span><span class="he">נתב״ג</span><span class="en" lang="en">Ben Gurion Airport</span></span><span class="km">55</span></li>
-              <li><span><span class="he">תל אביב–יפו</span><span class="en" lang="en">Tel Aviv-Yafo</span></span><span class="km">60</span></li>
-            </ul>
-          </div>
-          <p class="more"><b>ועוד:</b> רחובות, נס ציונה, חולון, בת ים, רמת גן, פתח תקווה, מודיעין</p>
-        </article>
-
-        <article class="region">
-          <h3>ירושלים והסביבה</h3>
-          <div class="sign">
-            <ul>
-              <li><span><span class="he">בית שמש</span><span class="en" lang="en">Bet Shemesh</span></span><span class="km">55</span></li>
-              <li><span><span class="he">מבשרת ציון</span><span class="en" lang="en">Mevasseret Ziyyon</span></span><span class="km">75</span></li>
-              <li><span><span class="he">ירושלים</span><span class="en" lang="en">Jerusalem</span></span><span class="km">80</span></li>
-            </ul>
-          </div>
-          <p class="more"><b>ועוד:</b> צור הדסה, אבו גוש, מוצא עילית, קריית יערים</p>
-        </article>
-      </div>
-      <p class="note">המספרים בשלטים הם מרחק נסיעה משוער בק״מ מאשקלון.</p>
     </div>
   </section>
 
